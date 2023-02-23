@@ -1,0 +1,100 @@
+body{
+  background-image: url('mesh-371.png');
+  background-repeat: no-repeat;
+  height: 100%; 
+  margin: 0; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  font-family: Roashe;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+header{
+  background: #162;
+  color:white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px ,#000, solid;
+   margin-bottom: 10px;
+   font-size: 1.5rem;
+   letter-spacing: 0.5em;
+   
+}
+#text{
+  height: 20em;
+  width: 30em;
+  margin-left: 37em;
+  margin-top: 10em;
+  border-style: solid;
+  border-color: bluegreen;
+  border-width: 1em;
+}
+@font-face {
+  font-family: Roashe;
+  src: url('Roashe.ttf');
+}
+@keyframes example {
+  0%   {box-shadow: 5px 5px cyan ;}
+  25% {box-shadow: 5px 5px #38FF12;}
+  50%  {box-shadow: 5px 5px #FF3403;}
+  75%  {box-shadow: 5px 5px #CB0FFF;}
+  100% {box-shadow: 5px 5px #39FF14;}
+}
+#container{
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+#btlcontainer{  
+  display: inline-block;
+  margin-left: 5.5em;
+  color:white;
+}
+#bblcontainer{
+  display: inline-block;
+  margin-left: 5.5em;
+  color:white;
+}
+#bbrcontainer{
+  display: inline-block;
+  margin-left: 5.5em;
+  color:white;
+}
+#btrcontainer{
+  display: inline-block;
+  margin-left: 5.5em;
+  color:white;
+}
+#btl{
+  border-radius: 60px 60px 60px 60px;
+}
+#bbl{
+  border-radius: 60px 60px 60px 60px;
+}
+#btr{
+  border-radius: 60px 60px 60px 60px;
+}
+#bbr{
+  border-radius: 60px 60px 60px 60px;
+}
+#bbl:focus{
+  animation-name:example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+#bbr:focus{
+  animation-name:example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+#btl:focus{
+  animation-name:example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+#btr:focus{
+  animation-name:example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
