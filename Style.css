@@ -1,0 +1,22 @@
+Body{
+  background-color:#0ffe;
+}
+h1{
+  color: white;
+  background-color: purple;
+  text-align: center;
+}
+#main{
+ position: absolute;
+ margin-left: 35%;
+}
+#rox{
+  background-color: white;
+  width: 10%;
+}
+#ry{
+  background-color: white;
+  width: 10%;
+  margin-left: 90%;
+  
+}
