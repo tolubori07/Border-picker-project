@@ -29,7 +29,7 @@ const App = () => {
               placeholder="Top Left"
               class="bg-white border-4 border-black p-3 rounded-xl"
               value={tl()}
-              onInput={(e) => setTl(e.currentTarget.value)}
+              onInput={(e) => setTl(e.currentTarget.valueAsNumber || 0)}
             />
           </div>
 
@@ -41,7 +41,7 @@ const App = () => {
               placeholder="Top Right"
               class="bg-white border-4 border-black p-3 rounded-xl"
               value={tr()}
-              onInput={(e) => setTr(e.currentTarget.value)}
+              onInput={(e) => setTr(e.currentTarget.valueAsNumber || 0)}
             />
           </div>
           <div class="input flex flex-col">
@@ -52,7 +52,7 @@ const App = () => {
               placeholder="Bottom Left"
               class="bg-white border-4 border-black p-3 rounded-xl"
               value={bl()}
-              onInput={(e) => setbl(e.currentTarget.value)}
+              onInput={(e) => setbl(e.currentTarget.valueAsNumber || 0)}
             />
           </div>
           <div class="input flex flex-col">
@@ -63,12 +63,14 @@ const App = () => {
               placeholder="Bottom Right"
               class="bg-white border-4 border-black p-3 rounded-xl"
               value={br()}
-              onInput={(e) => setbr(e.currentTarget.value)}
+              onInput={(e) => setbr(e.currentTarget.valueAsNumber || 0)}
             />
           </div>
         </div>
       </div>
-      <A href="/eightpoint" class="underline">8 Point Border radius</A>
+      <A href="/eightpoint" class="underline">
+        8 Point Border radius
+      </A>
     </main>
   );
 };

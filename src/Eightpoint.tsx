@@ -30,7 +30,7 @@ const Eightpoint = () => {
               placeholder="Horizntal Top Left"
               class="bg-white border-4 border-black p-3 rounded-xl"
               value={htl()}
-              onInput={(e) => sethTl(e.currentTarget.value)}
+              onInput={(e) => sethTl(e.currentTarget.valueAsNumber || 0)}
             />
           </div>
           <div class="input flex flex-col">
@@ -41,7 +41,7 @@ const Eightpoint = () => {
               placeholder="Top Left"
               class="bg-white border-4 border-black p-3 rounded-xl"
               value={vtl()}
-              onInput={(e) => setvTl(e.currentTarget.value)}
+              onInput={(e) => setvTl(e.currentTarget.valueAsNumber || 0)}
             />
           </div>
 
@@ -53,7 +53,7 @@ const Eightpoint = () => {
               placeholder="Top Right"
               class="bg-white border-4 border-black p-3 rounded-xl"
               value={htr()}
-              onInput={(e) => sethTr(e.currentTarget.value)}
+              onInput={(e) => sethTr(e.currentTarget.valueAsNumber || 0)}
             />
           </div>
           <div class="input flex flex-col">
@@ -64,7 +64,7 @@ const Eightpoint = () => {
               placeholder="Top Right"
               class="bg-white border-4 border-black p-3 rounded-xl"
               value={vtr()}
-              onInput={(e) => setvTr(e.currentTarget.value)}
+              onInput={(e) => setvTr(e.currentTarget.valueAsNumber || 0)}
             />
           </div>
 
@@ -76,7 +76,7 @@ const Eightpoint = () => {
               placeholder="Bottom Left"
               class="bg-white border-4 border-black p-3 rounded-xl"
               value={hbl()}
-              onInput={(e) => sethbl(e.currentTarget.value)}
+              onInput={(e) => sethbl(e.currentTarget.valueAsNumber || 0)}
             />
           </div>
           <div class="input flex flex-col">
@@ -87,7 +87,7 @@ const Eightpoint = () => {
               placeholder="Bottom Left"
               class="bg-white border-4 border-black p-3 rounded-xl"
               value={vbl()}
-              onInput={(e) => setvbl(e.currentTarget.value)}
+              onInput={(e) => setvbl(e.currentTarget.valueAsNumber || 0)}
             />
           </div>
 
@@ -99,7 +99,7 @@ const Eightpoint = () => {
               placeholder="Bottom Right"
               class="bg-white border-4 border-black p-3 rounded-xl"
               value={hbr()}
-              onInput={(e) => sethbr(e.currentTarget.value)}
+              onInput={(e) => sethbr(e.currentTarget.valueAsNumber || 0)}
             />
           </div>
           <div class="input flex flex-col">
@@ -110,12 +110,14 @@ const Eightpoint = () => {
               placeholder="Bottom Right"
               class="bg-white border-4 border-black p-3 rounded-xl"
               value={vbr()}
-              onInput={(e) => setvbr(e.currentTarget.value)}
+              onInput={(e) => setvbr(e.currentTarget.valueAsNumber || 0)}
             />
           </div>
         </div>
       </div>
-      <A href="/" class="underline">Normal Border radius</A>
+      <A href="/" class="underline">
+        Normal Border radius
+      </A>
     </main>
   );
 };
